@@ -11,40 +11,68 @@ const prompt = require(`prompt-sync`)();
 // 4 respostas Sim: Depois de muito esforço você conquista seu objetivo, embora não de maneira perfeita.
 // 5 respostas Sim: Você triunfa de maneira inquestionável e seus feitos serão lembrados por muitas gerações.
 // O programa deve contar a história inicial (background), fazer as perguntas, e ao final, exibir o resultado de acordo com as situações acima.
-/*
+
 console.log(
   "Você precisa comprar roupas para sua mulher, sua missão é fazer ela não brigar quando você chegar,\n precisa escolher 4 peças de roupas e ainda responder uma pergunta dela no final, boa sorte!."
 );
 
 let contador = 0;
-const resp1 = prompt(
-  "Você seleciona o vestido que sua mulher gosta e o vendedor mostra dois tamanhos de vestidos um maior e outro do tamanho exato dela \n Você seleciona o vestido maior? (S/N)"
+console.log(
+  "Você seleciona o vestido que sua mulher gosta e o vendedor mostra dois tamanhos de vestidos um maior e outro do tamanho exato dela."
 );
+let resp1 = prompt("Você seleciona o vestido maior? (S/N)");
+while (resp1.toUpperCase() != "S" && resp1.toUpperCase() != "N") {
+  resp1 = prompt(
+    "Você seleciona o vestido maior? Favor selecionar uma das opções(S/N)"
+  );
+}
 if (resp1.toUpperCase() == "S") {
   contador++;
 }
-const resp2 = prompt(
-  "Você seleciona o sapato que sua mulher gosta e o vendedor mostra dois tamanhos de sapatos um menor e outro do tamanho exato dela \n Você seleciona o sapato menor? (S/N)"
+console.log(
+  "Você seleciona o sapato que sua mulher gosta e o vendedor mostra dois tamanhos de sapatos um menor e outro do tamanho exato dela."
 );
-if (resp2.toUpperCase() == "S") {
+resp1 = prompt("Você seleciona o sapato menor? (S/N)");
+while (resp1.toUpperCase() != "S" && resp1.toUpperCase() != "N") {
+  resp1 = prompt(
+    "Você seleciona o sapato menor? Favor selecionar uma das opções(S/N)"
+  );
+}
+if (resp1.toUpperCase() == "S") {
   contador++;
 }
-const resp3 = prompt(
-  "Você pede para ver os brincos e o vendedor mostra dois pares de brincos um mais caro da marca que da inveja nas amigas embora bem feio e outro mais barato mas muito bonito \n Você seleciona o brinco feio? (S/N)"
+console.log(
+  "Você pede para ver os brincos e o vendedor mostra dois pares de brincos um mais caro da marca que da inveja nas amigas embora bem feio e outro mais barato mas muito bonito."
 );
-if (resp3.toUpperCase() == "S") {
+resp1 = prompt("Você seleciona o brinco feio? (S/N)");
+while (resp1.toUpperCase() != "S" && resp1.toUpperCase() != "N") {
+  resp1 = prompt(
+    "Você seleciona o brinco feio? Favor selecionar uma das opções(S/N)"
+  );
+}
+if (resp1.toUpperCase() == "S") {
   contador++;
 }
-const resp4 = prompt(
-  "Você pede para ver a seleção de langerie e o vendedor mostra dois um super sexy e outra confortável que cobre tudo \n Você seleciona o sexy? (S/N)"
+console.log(
+  "Você pede para ver a seleção de langerie e o vendedor mostra dois um super sexy e outra confortável que cobre tudo."
 );
-if (resp4.toUpperCase() == "S") {
+resp1 = prompt("Você seleciona o sexy? (S/N)");
+while (resp1.toUpperCase() != "S" && resp1.toUpperCase() != "N") {
+  resp1 = prompt("Você seleciona o sexy? Favor selecionar uma das opções(S/N)");
+}
+if (resp1.toUpperCase() == "S") {
   contador++;
 }
-const resp5 = prompt(
-  "Você chegou em casa e ela experimenta o vestido, quando ela termina de se olhar no espelho te pergunta \n Esse vestido me deixa bonita? (S/N)"
+console.log(
+  "Você chegou em casa e ela experimenta o vestido, quando ela termina de se olhar no espelho te pergunta."
 );
-if (resp5.toUpperCase() == "S") {
+resp1 = prompt("Esse vestido me deixa bonita? (S/N)");
+while (resp1.toUpperCase() != "S" && resp1.toUpperCase() != "N") {
+  resp1 = prompt(
+    "Esse vestido me deixa bonita? Favor selecionar uma das opções(S/N)"
+  );
+}
+if (resp1.toUpperCase() == "S") {
   contador++;
 }
 
@@ -62,10 +90,9 @@ if (contador == 0) {
   );
 } else if (contador == 5) {
   console.log(
-    "Se safou por completo, ufa prepare-se pra uma baita noite, não esqueceu das camisinhas certo?"
+    "Se safou por completo, ufa prepare-se para uma baita noite, não esqueceu das camisinhas certo?"
   );
 }
-*/
 
 ///// Projeto 2/////// - Jokenpô
 // O Jokenpô é o popular jogo do "Pedra, papel e tesoura". A premissa é simples, você tem 3 elementos para escolher, e cada um deles vence de um, e perde para o outro.
@@ -171,6 +198,7 @@ while (i <= rodadas) {
 
 // Com isso pronto você já pode começar a colocar em código:
 // Crie variáveis para armazenar os status do personagem (Fome? Dinheiro? Saúde? Força?). Que tipo de variável seria a mais adequada para isso?
+/*
 console.log(
   "Você está de dieta e tem de controlar o que come no dia sem fazer sua quantidade de calorias passar do objetivo.(para ter sucesso tem de atingir consumo de caloria até o objetivo ou pelo menos até 20% abaixo dele)"
 );
