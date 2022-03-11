@@ -13,7 +13,7 @@ const prompt = require(`prompt-sync`)();
 // O programa deve contar a história inicial (background), fazer as perguntas, e ao final, exibir o resultado de acordo com as situações acima.
 
 console.log(
-  "Você precisa comprar roupas para sua mulher, sua missão é fazer ela não brigar quando você chegar,\n precisa escolher 4 peças de roupas e ainda responder uma pergunta dela no final, boa sorte!."
+  "Você precisa comprar roupas para sua mulher, sua missão é fazer ela não brigar quando você chegar,\n precisa escolher 5 peças de roupas e ainda responder uma pergunta dela no final, boa sorte!."
 );
 
 let contador = 0;

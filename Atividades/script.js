@@ -46,8 +46,12 @@ if (turnos % 1 == 0) {
 ////// Atividades aula 3 //////
 /*
 // Faça um Programa que peça dois números e imprima o maior deles, e informe caso eles sejam iguais.
-const n1 = prompt(`Informe o número 1`);
-const n2 = prompt(`Informe o número 2`);
+let n1 = +prompt(`Informe o número 1.`);
+let n2 = +prompt(`Informe o número 2.`);
+while(isNaN(n1) || isNaN(n2)){
+  n1 = +prompt(`Informe o número 1. (Favor informar um número.)`);
+  n2 = +prompt(`Informe o número 2. (Favor informar um número.)`);
+}
 if (n1 > n2) {
   console.log(n1);
 } else if (n1 < n2) {
